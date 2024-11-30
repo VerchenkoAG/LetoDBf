@@ -100,6 +100,20 @@ REQUEST HB_GT_NUL_DEFAULT
 
 /* following selected functions are linked into server executable with REQUEST */
 REQUEST OS, VERSION, HB_VERSION
+REQUEST hb_vfCopyFile, hb_vfErase, hb_FCopy              /*! 04.11.2024 */
+        /*! 30.09.2024 */
+REQUEST hb_hrbRun , hb_NtoC, hb_EnumIndex, hb_cwd, LtoN, hb_FileMatch
+REQUEST hb_hrbLoad, hb_hrbDo, hb_hrbUnLoad, hb_hrbGetFunsym, hb_hrbGetFunList
+        /*! 16.09.2024 */
+REQUEST HB_ZIPFILE, HB_UNZIPFILE  
+        /*! 12.09.2024 */
+REQUEST HB_DIRECTORY, HB_ISARRAY, HB_ISCHAR, HB_ISLOGICAL, HB_ISBLOCK, ;
+        HB_ISNUMERIC, HB_ISOBJECT, HB_ISNIL, hb_Default, hb_ExecFromArray, ;
+        hb_jsonDecode, hb_jsonEncode, hb_DirSepAdd, hb_DirBuild, hb_DirExists, ;
+        hb_DefaultValue, hb_DirSepToOS, hb_DirTemp, hb_DirUnbuild, hb_FileExists,;
+        hb_FNameDir, hb_FNameExt, hb_FNameExtSet, hb_FNameExtSetDef, hb_FNameMerge, ;
+        hb_FNameName, hb_FNameNameExt, hb_FNameSplit, hb_eol, hb_ps, hb_ForNext, ;
+        HB_Crypt, HB_DeCrypt, hb_CRC32, hb_memoread, hb_memowrit, Seconds
 REQUEST ABS, ALLTRIM, AT, CHR, CTOD, CDOW, CMONTH, DATE, DAY, DELETED, DESCEND, DTOC, DTOS, DOW, ;
         EMPTY, I2BIN, L2BIN, LEFT, LEN, LOWER, LTRIM, MAX, MIN, MONTH, OS, PAD, PADC, ;
         PADL, PADR, RAT, RECNO, RIGHT, ROUND, RTRIM, SPACE, STOD, STR, STRZERO, ;
@@ -115,12 +129,12 @@ REQUEST hb_ATokens, hb_tokenGet, hb_tokenCount, hb_strformat
 REQUEST FieldPos, FieldGet, FieldPut, hb_FieldType, hb_FieldLen, hb_FieldDec
 REQUEST hb_WildMatch, hb_AtX
 REQUEST Deleted, Found, Bof, Eof
-#ifdef _STREAMFLEX_  /* enquirer */
+//#ifdef _STREAMFLEX_  /* enquirer */ /*! 12.09.2024 */
    REQUEST hb_HAllocate, hb_HAutoAdd, hb_HBinary, hb_HCaseMatch, hb_HDefault, hb_HKeepOrder
    REQUEST hb_Hash, hb_HClear, hb_HFill, hb_HClone, hb_HCopy, hb_HMerge, hb_HSort, hb_HEval
    REQUEST hb_HHasKey, hb_HPos, hb_HScan, hb_HValueAt, hb_HKeyAt, hb_HPairAt, hb_HKeys, hb_HValues
    REQUEST hb_HSet, hb_HGet, hb_HDel, hb_HDelAt
-#endif
+//#endif
 REQUEST Array, AClone, ASize, ADel, AIns, AAdd, AEval, AScan, ASort
 REQUEST hb_idleSleep, hb_milliSeconds
 

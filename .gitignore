@@ -3,6 +3,13 @@
 *.ko
 *.obj
 *.elf
+*.log
+*.*_broken
+*.backup
+
+bin/*
+!bin/*.ini
+!bin/*.prg
 
 # Precompiled Headers
 *.gch
