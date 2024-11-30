@@ -40,7 +40,7 @@
 {bcc}-lhbct
 {!bcc}hbmemio.hbc
 {!bcc}hbct.hbc
-############ для архиватора 18.09.2024
+############ РґР»СЏ Р°СЂС…РёРІР°С‚РѕСЂР° 18.09.2024
 {!bcc}hbmzip.hbc
 
 {bcc&__BM}-lrddbm
@@ -82,10 +82,10 @@ source/common/common.prg
 {__LZ4}source/common/lz4net.c
 {__PMURHASH}source/common/PMurHash.c
 
-########## для Debian GNU/Linux 11 (bullseye) x86_64 -  18.09.2024
+########## РґР»СЏ Debian GNU/Linux 11 (bullseye) x86_64 -  18.09.2024
 -ldflag=-no-pie
 
-########## для архивирования -  18.09.2024
+########## РґР»СЏ Р°СЂС…РёРІРёСЂРѕРІР°РЅРёСЏ -  18.09.2024
 -lhbziparc
 -lxhb
 -lhbmzip
